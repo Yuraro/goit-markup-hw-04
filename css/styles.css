@@ -387,6 +387,51 @@ color: #FFFFFF;
 .footer-contact-link{
     color: rgba(255, 255, 255, 0.6)
 }
+
+.footer-soc {
+    display: flex;
+    margin-right: 70px;
+}
+
+.footer-title {
+    font-size: 14px;
+    line-height: 1.1428;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: none;
+}
+
+.team-soc-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-soc-item {
+    width: 44px;
+    height: 44px;
+}
+
+.footer-soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-soc-icon {
+fill: #FFFFFF;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: var(--blue-active-color);
+}
+
 /* ------------PORTFOLIO-------------- */
 
 .portfolio {
