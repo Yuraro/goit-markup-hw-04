@@ -101,6 +101,14 @@ body{
     margin-left: auto;
 }
 
+.header-soc-link {
+    margin-right: 10px;
+}
+
+.header-soc-icon {
+    fill: #757575;
+}
+
 .header-nav-address {
     font-weight: 500;
     font-size: 14px;
@@ -109,8 +117,8 @@ body{
     color: var(--subtitle-color);
     margin-right: 50px;
     }
-.header-nav-address:hover,
-.header-nav-address:focus {
+.header-nav-address:hover  .header-soc-icon,
+.header-nav-address:focus  .header-soc-icon {
 color: var(--blue-active-color);
 }
 .header-nav-contact {
@@ -120,8 +128,8 @@ color: var(--blue-active-color);
     letter-spacing: 0.02em;
     color: var(--subtitle-color);
 }
-.header-nav-contact:hover,
-.header-nav-contact:focus {
+.header-nav-contact:hover  .header-soc-icon,
+.header-nav-contact:focus  .header-soc-icon {
 color: var(--blue-active-color);
 }
 
@@ -368,6 +376,7 @@ padding-bottom: 60px;
 }
 
 .footer-address {
+    display: flex;
     margin-top: 20px;
 }
 .footer-address-list{
@@ -389,8 +398,7 @@ color: #FFFFFF;
 }
 
 .footer-soc {
-    display: flex;
-    margin-right: 70px;
+    margin-left: 70px;
 }
 
 .footer-title {
@@ -400,6 +408,7 @@ color: #FFFFFF;
     text-transform: uppercase;
     color: #FFFFFF;
     cursor: none;
+    margin-bottom: 20px;
 }
 
 .team-soc-list {
