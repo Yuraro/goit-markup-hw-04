@@ -101,14 +101,6 @@ body{
     margin-left: auto;
 }
 
-.header-soc-link {
-    margin-right: 10px;
-}
-
-.header-soc-icon {
-    fill: #757575;
-}
-
 .header-nav-address {
     font-weight: 500;
     font-size: 14px;
@@ -117,10 +109,22 @@ body{
     color: var(--subtitle-color);
     margin-right: 50px;
     }
-.header-nav-address:hover  .header-soc-icon,
-.header-nav-address:focus  .header-soc-icon {
+
+.header-soc-icon {
+fill: #757575;
+margin-right: 10px;
+}
+
+.header-nav-address:hover,
+.header-nav-address:focus {
 color: var(--blue-active-color);
 }
+
+.header-nav-address:hover .header-soc-icon,
+.header-nav-address:focus .header-soc-icon {
+    fill: var(--blue-active-color);
+}
+
 .header-nav-contact {
     font-weight: 500;
     font-size: 14px;
@@ -128,18 +132,31 @@ color: var(--blue-active-color);
     letter-spacing: 0.02em;
     color: var(--subtitle-color);
 }
-.header-nav-contact:hover  .header-soc-icon,
-.header-nav-contact:focus  .header-soc-icon {
+
+.header-nav-contact:hover,
+.header-nav-contact:focus {
 color: var(--blue-active-color);
 }
 
+.header-nav-contact:hover .header-soc-icon,
+.header-nav-contact:focus .header-soc-icon {
+    fill: var(--blue-active-color);
+}
 /* ------------HERO-------------- */
 
-.hero {
-    background: #2F303A;
+.hero{
+background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/hero_image.jpg);
+
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+
     padding-top: 200px;
     padding-bottom: 200px;
 }
+
 .hero-title {
     font-weight: 900;
     font-size: 44px;
@@ -199,6 +216,20 @@ color: var(--blue-active-color);
     line-height: 1.7142;
     letter-spacing: 0.03em;
     color: var(--subtitle-color);
+}
+
+.about-link {
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.about-icon {
 }
 
 /* ------------EXAMPLE-------------- */
@@ -354,7 +385,7 @@ fill: var(--fill-icons-color);
 
 .custom-link:hover .custom-icon,
 .custom-link:focus .custom-icon {
-    fill: #2196F3;
+    fill: var(--blue-active-color);
 }
 
 
@@ -402,12 +433,12 @@ color: #FFFFFF;
 }
 
 .footer-title {
+    font-style: normal;
     font-size: 14px;
     line-height: 1.1428;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
-    cursor: none;
     margin-bottom: 20px;
 }
 
